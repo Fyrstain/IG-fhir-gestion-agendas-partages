@@ -14,40 +14,22 @@ Usage: #definition
 // Group for GAP-FrAppointment → MOS RendezVous
 * insert Group(https://interop.esante.gouv.fr/ig/fhir/gap/StructureDefinition/gap-fr-appointment, https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/RendezVous)
 
-* insert GroupElement(Appointment.identifier, RendezVous.idRdv)
-* group[=].element[=].target[=].comment = "Identifiant logique du rendez-vous mappé vers RendezVous.idRdv."
-* insert GroupElement(Appointment.appointmentType, RendezVous.typeRdv)
-* group[=].element[=].target[=].comment = "Type du rendez-vous mappé vers RendezVous.typeRdv."
-* insert GroupElement(Appointment.created, RendezVous.datePriseRdv)
-* group[=].element[=].target[=].comment = "Date à laquelle le rendez-vous a été initialement créé."
-* insert GroupElement(Appointment.start, RendezVous.dateDebutRdv)
-* group[=].element[=].target[=].comment = "Date et heure de début du rendez-vous."
-* insert GroupElement(Appointment.end, RendezVous.dateFinRdv)
-* group[=].element[=].target[=].comment = "Date et heure de fin du rendez-vous."
+* insert GroupElementWithCommentTarget(Appointment.identifier, RendezVous.idRdv, [["Identifiant logique du rendez-vous mappé vers RendezVous.idRdv."]])
+* insert GroupElementWithCommentTarget(Appointment.appointmentType, RendezVous.typeRdv, [["Type du rendez-vous mappé vers RendezVous.typeRdv."]])
+* insert GroupElementWithCommentTarget(Appointment.created, RendezVous.datePriseRdv, [["Date à laquelle le rendez-vous a été initialement créé."]])
+* insert GroupElementWithCommentTarget(Appointment.start, RendezVous.dateDebutRdv, [["Date et heure de début du rendez-vous."]])
+* insert GroupElementWithCommentTarget(Appointment.end, RendezVous.dateFinRdv, [["Date et heure de fin du rendez-vous."]])
 // Pas de Date d'annulation de RDV dans le profil
-* insert GroupElement(Appointment.supportingInformation, RendezVous.pieceJointe)
-* group[=].element[=].target[=].comment = "Informations supplémentaires fournies lors de la prise du rendez-vous."
-* insert GroupElement(Appointment.priority, RendezVous.priorite)
-* group[=].element[=].target[=].comment = "Priorité du rendez-vous."
-* insert GroupElement(Appointment.description, RendezVous.titreRdv)
-* group[=].element[=].target[=].comment = "La description peut servir à la fois de titre et de description détaillée du rendez-vous."
-* insert GroupElement(Appointment.description, RendezVous.descriptionRdv)
-* group[=].element[=].target[=].comment = "La description peut servir à la fois de titre et de description détaillée du rendez-vous."
-* insert GroupElement(Appointment.reasonCode, RendezVous.motifRdv)
-* group[=].element[=].target[=].comment = "Motif codé pour lequel le rendez-vous est pris."
-* insert GroupElement(Appointment.comment, RendezVous.commentaire)
-* group[=].element[=].target[=].comment = "Commentaires supplémentaires sur le rendez-vous."
-* insert GroupElement(Appointment.status, RendezVous.statutRdv)
-* group[=].element[=].target[=].comment = "Statut de disponibilité/occupation du rendez-vous."
-* insert GroupElement(Appointment.slot, RendezVous.creneaux)
-* group[=].element[=].target[=].comment = "Références aux créneaux horaires associés à ce rendez-vous."
-* insert GroupElement(Appointment.participant.actor, RendezVous.personnePriseCharge)
-* group[=].element[=].target[=].comment = "Les participants qui sont des patients (ressource Patient) sont mappés vers des références PersonnePriseCharge."
-* insert GroupElement(Appointment.participant.actor, RendezVous.professionnel)
-* group[=].element[=].target[=].comment = "Les participants qui sont des praticiens (ressources Practitioner ou PractitionerRole) sont mappés vers des références Professionnel."
-* insert GroupElement(Appointment.participant.actor, RendezVous.entiteGeographique)
-* group[=].element[=].target[=].comment = "Les participants référencés comme un Lieu (ressource Location) sont mappés vers EntiteGeographique."
-* insert GroupElement(Appointment.participant.actor, RendezVous.equipementSpecifique)
-* group[=].element[=].target[=].comment = "Les participants représentant des dispositifs (ressource Device) sont mappés vers EquipementSpecifique."
-* insert GroupElement(Appointment.meta, RendezVous.metadonnee)
-* group[=].element[=].target[=].comment = "Les métadonnées de la ressource sont mappées vers les éléments de RendezVous.metadonnee."
+* insert GroupElementWithCommentTarget(Appointment.supportingInformation, RendezVous.pieceJointe, [["Informations supplémentaires fournies lors de la prise du rendez-vous."]])
+* insert GroupElementWithCommentTarget(Appointment.priority, RendezVous.priorite, [["Priorité du rendez-vous."]])
+* insert GroupElementWithCommentTarget(Appointment.description, RendezVous.titreRdv, [["La description peut servir à la fois de titre et de description détaillée du rendez-vous."]])
+* insert GroupElementWithCommentTarget(Appointment.description, RendezVous.descriptionRdv, [["La description peut servir à la fois de titre et de description détaillée du rendez-vous."]])
+* insert GroupElementWithCommentTarget(Appointment.reasonCode, RendezVous.motifRdv, [["Motif codé pour lequel le rendez-vous est pris."]])
+* insert GroupElementWithCommentTarget(Appointment.comment, RendezVous.commentaire, [["Commentaires supplémentaires sur le rendez-vous."]])
+* insert GroupElementWithCommentTarget(Appointment.status, RendezVous.statutRdv, [["Statut de disponibilité/occupation du rendez-vous."]])
+* insert GroupElementWithCommentTarget(Appointment.slot, RendezVous.creneaux, [["Références aux créneaux horaires associés à ce rendez-vous."]])
+* insert GroupElementWithCommentTarget(Appointment.participant.actor, RendezVous.personnePriseCharge, [["Les participants qui sont des patients (ressource Patient) sont mappés vers des références PersonnePriseCharge."]])
+* insert GroupElementWithCommentTarget(Appointment.participant.actor, RendezVous.professionnel, [["Les participants qui sont des praticiens (ressources Practitioner ou PractitionerRole) sont mappés vers des références Professionnel."]])
+* insert GroupElementWithCommentTarget(Appointment.participant.actor, RendezVous.entiteGeographique, [["Les participants référencés comme un Lieu (ressource Location) sont mappés vers EntiteGeographique."]])
+* insert GroupElementWithCommentTarget(Appointment.participant.actor, RendezVous.equipementSpecifique, [["Les participants représentant des dispositifs (ressource Device) sont mappés vers EquipementSpecifique."]])
+* insert GroupElementWithCommentTarget(Appointment.meta, RendezVous.metadonnee, [["Les métadonnées de la ressource sont mappées vers les éléments de RendezVous.metadonnee."]])

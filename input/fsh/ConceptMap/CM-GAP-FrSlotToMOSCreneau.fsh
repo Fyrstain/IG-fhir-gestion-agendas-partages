@@ -14,18 +14,12 @@ Usage: #definition
 // Group for GAP-FrSlot → MOS Creneau
 * insert Group(https://interop.esante.gouv.fr/ig/fhir/gap/StructureDefinition/gap-fr-slot, https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Creneau)
 
-* insert GroupElement(Slot.identifier, Creneau.idCreneau)
-* group[=].element[=].target[=].comment = "Identifiant unique du créneau, mappé vers Creneau.idCreneau."
-* insert GroupElement(Slot.status, Creneau.statut)
-* group[=].element[=].target[=].comment = "Statut du créneau (libre, occupé, etc.) mappé vers Creneau.statut."
-* insert GroupElement(Slot.start, Creneau.dateDebut)
-* group[=].element[=].target[=].comment = "Date et heure de début du créneau, mappées vers Creneau.dateDebut."
-* insert GroupElement(Slot.end, Creneau.dateFin)
-* group[=].element[=].target[=].comment = "Date et heure de fin du créneau, mappées vers Creneau.dateFin."
-* insert GroupElement(Slot.comment, Creneau.informationComplementaire)
-* group[=].element[=].target[=].comment = "Commentaires ou informations complémentaires liés au créneau, mappés vers Creneau.informationComplementaire."
-* insert GroupElement(Slot.meta, Creneau.metadonnee)
-* group[=].element[=].target[=].comment = "Les métadonnées de la ressource sont mappées vers les éléments de Creneau.metadonnee."
+* insert GroupElementWithCommentTarget(Slot.identifier, Creneau.idCreneau, [["Identifiant unique du créneau, mappé vers Creneau.idCreneau."]])
+* insert GroupElementWithCommentTarget(Slot.status, Creneau.statut, [["Statut du créneau (libre, occupé, etc.) mappé vers Creneau.statut."]])
+* insert GroupElementWithCommentTarget(Slot.start, Creneau.dateDebut, [["Date et heure de début du créneau, mappées vers Creneau.dateDebut."]])
+* insert GroupElementWithCommentTarget(Slot.end, Creneau.dateFin, [["Date et heure de fin du créneau, mappées vers Creneau.dateFin."]])
+* insert GroupElementWithCommentTarget(Slot.comment, Creneau.informationComplementaire, [["Commentaires ou informations complémentaires liés au créneau, mappés vers Creneau.informationComplementaire."]])
+* insert GroupElementWithCommentTarget(Slot.meta, Creneau.metadonnee, [["Les métadonnées de la ressource sont mappées vers les éléments de Creneau.metadonnee."]])
 * group[=].element[+].code = #Slot.schedule
 * group[=].element[=].target[+].equivalence = #unmatched
 * group[=].element[=].target[=].comment = "La référence est faite dans le modèle logique Agenda."
