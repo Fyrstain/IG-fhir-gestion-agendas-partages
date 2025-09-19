@@ -45,3 +45,5 @@ Reference must be to a ValueSet, but found a StructureDefinition instead
 
 # Dependency to MOS IG
 No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Agenda'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/PlageDisponibilite'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS'
