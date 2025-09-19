@@ -26,3 +26,6 @@ Usage: #definition
 * group[=].element[=].target[=].comment = "Commentaires ou informations complémentaires liés au créneau, mappés vers Creneau.informationComplementaire."
 * insert GroupElement(Slot.meta, Creneau.metadonnee)
 * group[=].element[=].target[=].comment = "Les métadonnées de la ressource sont mappées vers les éléments de Creneau.metadonnee."
+* group[=].element[+].code = #Slot.schedule
+* group[=].element[=].target[+].equivalence = #unmatched
+* group[=].element[=].target[=].comment = "La référence est faite dans le modèle logique Agenda."
