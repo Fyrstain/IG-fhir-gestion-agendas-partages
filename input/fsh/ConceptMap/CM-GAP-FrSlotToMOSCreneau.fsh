@@ -1,8 +1,8 @@
 Instance: CM-GAP-FrSlotToMOSCreneau
 InstanceOf: ConceptMap
-Title: "Mapping du GAP-FrSlot vers Creneau du MOS"
+Title: "CM-GAP-FrSlotToMOSCreneau"
 Usage: #definition
-* title = "Mapping du GAP-FrSlot vers Creneau du MOS"
+* title = "CM-GAP-FrSlotToMOSCreneau"
 * description = "ConceptMap définissant la correspondance détaillée entre le profil GAP-FrSlot et le modèle logique MOS Creneau."
 * name = "CM_GAP_FrSlotToMOSCreneau"
 * status = #draft
