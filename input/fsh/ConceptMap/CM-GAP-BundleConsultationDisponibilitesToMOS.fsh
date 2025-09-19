@@ -81,10 +81,10 @@ Usage: #definition
 * group[=].unmapped.code = #MOSmap
 * group[=].unmapped.display = "Le mapping est un travail en cours à voir dans l'IG MOS."
 
-// RelatedPerson to PersonnePhysique
-* insert Group(https://interop.esante.gouv.fr/ig/fhir/gap/StructureDefinition/gap-bundle-reponse-demande-consult-dispo, https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/PersonnePhysique)
-* insert GroupElement(Bundle.entry:OrganizRelatedPersonation.resource, PersonnePhysique)
-* group[=].element[=].target[=].comment = "L'entrée RelatedPerson du Bundle est mappé vers le modèle logique PersonnePhysique."
+// RelatedPerson to Contact
+* insert Group(https://interop.esante.gouv.fr/ig/fhir/gap/StructureDefinition/gap-bundle-reponse-demande-consult-dispo, https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Contact)
+* insert GroupElement(Bundle.entry:RelatedPerson.resource, Contact)
+* group[=].element[=].target[=].comment = "L'entrée RelatedPerson du Bundle est mappé vers le modèle logique Contact."
 * group[=].unmapped.mode = #fixed
 * group[=].unmapped.code = #MOSmap
 * group[=].unmapped.display = "Le mapping est un travail en cours à voir dans l'IG MOS."

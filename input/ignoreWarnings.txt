@@ -56,3 +56,4 @@ No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fh
 No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/OrganisationInterne'
 No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/EntiteGeographique'
 No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/PersonnePhysique'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Contact'
