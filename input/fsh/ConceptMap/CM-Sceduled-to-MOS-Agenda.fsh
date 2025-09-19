@@ -1,15 +1,13 @@
-Instance: ConceptMap-GAPFrSchedule-to-MOSAgenda
+Instance: CM-GAP-FrSchedule-To-MOS-Agenda
 InstanceOf: ConceptMap
-Title: "Mapping du GAP-GAPFrSchedule vers Agenda du MOS"
+Title: "CM-GAP-FrSchedule-To-MOS-Agenda"
 Usage: #definition
 * title = "Mapping GAP-FrSchedule (FHIR) → MOS Agenda"
 * description = "ConceptMap définissant la correspondance détaillée entre le profil GAP-FrSchedule et le modèle logique MOS Agenda."
-* url = "https://example.fyrstain.com/fhir/ConceptMap/GAPFrSchedule-to-MOSAgenda"
-* name = "CM_GAP_FrSchedule_to_MOSAgenda"
+* name = "CM_GAP_FrSchedule_To_MOS_Agenda"
 * status = #draft
 * experimental = true
 * date = "2025-09-18"
-* publisher = "Fyrstain"
 
 // Group for gap-fr-schedule.html → MOS Agenda
 * insert Group(https://interop.esante.gouv.fr/ig/fhir/gap/StructureDefinition/gap-fr-schedule, https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Agenda)
