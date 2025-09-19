@@ -39,7 +39,6 @@ WARNING: ValueSet.where(id = 'valueset-no-codesystem'): Error from server: Unabl
 WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse)
 WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse)
 
-
 # Use of StructureDefinition instead of CodeSystem for source and target in ConceptMap
 Reference must be to a ValueSet, but found a StructureDefinition instead
 
@@ -47,3 +46,5 @@ Reference must be to a ValueSet, but found a StructureDefinition instead
 No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Agenda'
 No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/PlageDisponibilite'
 No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Creneau'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/RendezVous'
