@@ -12,7 +12,7 @@ RuleSet: GroupElementWithCommentTarget (sourceElementCode, targetCode, targetCom
 * group[=].element[+].code = #{sourceElementCode}
 * group[=].element[=].target[+].code = #{targetCode}
 * group[=].element[=].target[=].equivalence = #relatedto
-* group[=].element[=].target[=].comment = #{targetComment}
+* group[=].element[=].target[=].comment = {targetComment}
 
 RuleSet: AddTargetElement(targetCode)
 * group[=].element[=].target[+].code = #{targetCode}
