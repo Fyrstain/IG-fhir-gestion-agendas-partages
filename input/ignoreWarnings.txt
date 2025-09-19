@@ -43,8 +43,17 @@ WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No co
 Reference must be to a ValueSet, but found a StructureDefinition instead
 
 # Dependency to MOS IG
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/RendezVous'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Creneau'
 No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Agenda'
 No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/PlageDisponibilite'
-No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS'
-No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Creneau'
-No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/RendezVous'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/PersonnePriseCharge'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Professionnel'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/ExerciceProfessionnel'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/EquipementSpecifique'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Lieu'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/OrganisationInterne'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/EntiteGeographique'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/PersonnePhysique'
+No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/MOS/StructureDefinition/Contact'

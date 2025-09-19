@@ -1,6 +1,6 @@
 Instance: CM-GAP-FrAppointmentToMOSRendezVous
 InstanceOf: ConceptMap
-Title: "CM-GAP-FrAppointmentToMOSRendezVou"
+Title: "CM-GAP-FrAppointmentToMOSRendezVous"
 Usage: #definition
 * title = "CM-GAP-FrAppointmentToMOSRendezVous"
 * description = "ConceptMap définissant la correspondance détaillée entre le profil GAP-FrAppointment et le modèle logique MOS RendezVous."
