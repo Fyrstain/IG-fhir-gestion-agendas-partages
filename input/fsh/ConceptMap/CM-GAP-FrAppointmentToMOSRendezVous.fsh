@@ -2,7 +2,7 @@ Instance: CM-GAP-FrAppointmentToMOSRendezVous
 InstanceOf: ConceptMap
 Title: "Mapping du GAP-FrAppointment vers RendezVous du MOS"
 Usage: #definition
-* title = "Mapping du GAP-FrAppointment vers RendezVous du MOS"
+* title = "CM-GAP-FrAppointmentToMOSRendezVous"
 * description = "ConceptMap définissant la correspondance détaillée entre le profil GAP-FrAppointment et le modèle logique MOS RendezVous."
 * name = "CM_GAP_FrAppointmentToMOSRendezVous"
 * status = #draft
@@ -17,13 +17,13 @@ Usage: #definition
 * insert GroupElement(Appointment.identifier, RendezVous.idRdv)
 * group[=].element[=].target[=].comment = "Identifiant logique du rendez-vous mappé vers RendezVous.idRdv."
 * insert GroupElement(Appointment.appointmentType, RendezVous.typeRdv)
-* group[=].element[=].target[=].comment = "Type ou style du rendez-vous mappé vers RendezVous.typeRdv."
+* group[=].element[=].target[=].comment = "Type du rendez-vous mappé vers RendezVous.typeRdv."
 * insert GroupElement(Appointment.created, RendezVous.datePriseRdv)
 * group[=].element[=].target[=].comment = "Date à laquelle le rendez-vous a été initialement créé."
 * insert GroupElement(Appointment.start, RendezVous.dateDebutRdv)
-* group[=].element[=].target[=].comment = "Dates et heures de début du rendez-vous."
+* group[=].element[=].target[=].comment = "Date et heure de début du rendez-vous."
 * insert GroupElement(Appointment.end, RendezVous.dateFinRdv)
-* group[=].element[=].target[=].comment = "Dates et heures de fin du rendez-vous."
+* group[=].element[=].target[=].comment = "Date et heure de fin du rendez-vous."
 // Pas de Date d'annulation de RDV dans le profil
 * insert GroupElement(Appointment.supportingInformation, RendezVous.pieceJointe)
 * group[=].element[=].target[=].comment = "Informations supplémentaires fournies lors de la prise du rendez-vous."
